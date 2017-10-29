@@ -38,7 +38,7 @@ function validFen(fen) {
   if (typeof fen !== 'string') return false;
 
   // cut off any move, castling, etc info from the end
-  // we're only interested in position information
+  // Only position information is needed 
   fen = fen.replace(/ .+$/, '');
 
   // FEN should be 8 sections separated by slashes
